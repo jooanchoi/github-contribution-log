@@ -1,15 +1,17 @@
-# Contribution [#]: [Issue Title]
+# Contribution [#6814]: Bitbucket-Pull-Requests: Add Bitbucket Cloud support
 
 **Contribution Number:** [1]  
 **Student:** Joo An Choi 
-**Issue:** [GitHub issue link]  
+**Issue:** [[GitHub issue link]](https://github.com/backstage/community-plugins/issues/6814)
 **Status:** Phase I
 
 ---
 
 ## Why I Chose This Issue
 
-[1-2 paragraphs explaining why this issue interests you, how it matches your skills/learning goals, what you hope to learn]
+This issue caught my attention because it seems like resolving this issue would have a lot of impact. Bitbucket cloud is used by thousands of orgs. Foxing this issue would allow their cloud version control tool to be aligned with their developer dashboard. I think it's a good experience to have, especially for an internal tools team. 
+
+I've worked with JS so working with Typescript should not require much ramp-up. I think the issue is also a good way to learn about Backup plugin system. I think it would be fun to think about mapping API JSON payloads into front end interfaces. It's similar work to what I have done and working with it to ensure backwards compatibility could be a fun challenge.
 
 ---
 
@@ -17,11 +19,11 @@
 
 ### Problem Description
 
-[In your own words, what's broken or missing?]
+The Backstage Bitbucket Pull Requests plugin currently lacks integration with Bitbucket Cloud so it cannot fetch or display pull request data using the Cloud version due to its distinct REST API.
 
 ### Expected Behavior
 
-[What should happen?]
+The plugin can seamlessly detect a user's Bitbucket environment via the app-config.yaml file and use a dedicated API client to populate the existing Backstage UI components with Bitbucket Cloud PR data
 
 ### Current Behavior
 
